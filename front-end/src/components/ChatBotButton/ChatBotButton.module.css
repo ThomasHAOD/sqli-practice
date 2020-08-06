@@ -1,0 +1,24 @@
+.ChatBot {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  bottom: 3%;
+  right: 3%;
+  background: #339955;
+  color: black;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px #aaa;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ChatBot p {
+  margin-bottom: 0;
+}
+
+.Icon {
+  top: 15%;
+  position: relative;
+}

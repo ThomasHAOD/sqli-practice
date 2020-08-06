@@ -1,0 +1,12 @@
+.PreviousOrder {
+  background: #eee;
+  min-width: 250px;
+  max-width: 500px;
+  width: 47%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px #eee;
+  margin: 10px;
+  text-align: left;
+}

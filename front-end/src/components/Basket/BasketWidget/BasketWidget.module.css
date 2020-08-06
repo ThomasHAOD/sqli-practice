@@ -1,0 +1,36 @@
+.BasketSummary {
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  min-width: 120px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 4px solid #ccc;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.BasketCount {
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  align-items: center;
+}
+
+.BasketSummary h4 {
+  color: black;
+  font-size: 18px;
+}
+
+@media (min-width: 500px) {
+  .BasketSummary:hover,
+  .BasketSummary:active,
+  .BasketSummary.active {
+    border-bottom: 4px solid #40a4c8;
+  }
+}

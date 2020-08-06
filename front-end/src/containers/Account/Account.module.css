@@ -1,0 +1,21 @@
+.Account {
+  background: white;
+  text-align: center;
+}
+
+.AccountDetails {
+  margin: 10px;
+  padding: 10px;
+  background: #ccc;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+  text-align: left;
+}
+
+.AccountDetails ul {
+  list-style: none;
+}
+
+.PreviousOrders {
+  width: 100%;
+}

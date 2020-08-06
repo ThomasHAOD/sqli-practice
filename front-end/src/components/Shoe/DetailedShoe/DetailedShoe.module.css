@@ -1,0 +1,31 @@
+.Image {
+  max-width: 40%;
+  display: inline;
+  border: 1px solid #000;
+}
+
+.SelectedShoe {
+  width: 90%;
+  height: 90%;
+  display: block;
+  flex-flow: column;
+  margin: 10px auto;
+  background: #ccc;
+  padding: 5px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.List {
+  text-align: left;
+  list-style: none;
+  width: 100%;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
+.Details {
+  display: flex;
+  flex-flow: row;
+}

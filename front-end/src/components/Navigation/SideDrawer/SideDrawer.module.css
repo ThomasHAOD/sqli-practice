@@ -1,0 +1,59 @@
+.SideDrawer {
+  position: fixed;
+  width: 320px;
+  max-width: 90%;
+  min-width: 300px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 200;
+  background-color: white;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out;
+}
+
+.SideDrawer nav {
+  margin-top: 70px;
+}
+.Header {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #8f3024;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 500px) {
+  .SideDrawer {
+    display: none;
+  }
+}
+
+.Open {
+  transform: translateX(0);
+}
+
+.Close {
+  transform: translateX(100%);
+}
+
+.Logo {
+  height: 100%;
+}
+
+.Footer {
+  position: fixed;
+  bottom: 15px;
+}
+
+.Widget {
+  position: fixed;
+  left: 40%;
+}

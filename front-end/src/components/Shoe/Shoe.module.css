@@ -1,0 +1,32 @@
+.Image {
+  max-width: 40%;
+  display: inline;
+  border: 1px solid #000;
+}
+
+.Shoe {
+  width: 80%;
+  min-width: 250px;
+  display: block;
+  flex-flow: column;
+  margin: 10px auto;
+  background: #ccc;
+  padding: 10px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+}
+
+.List {
+  text-align: left;
+  list-style: none;
+  width: 100%;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
+.Details {
+  display: flex;
+  flex-flow: row;
+}

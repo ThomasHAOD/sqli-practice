@@ -1,0 +1,24 @@
+.Styles {
+  display: flex;
+  padding: 5px;
+  margin: 10px;
+  align-content: center;
+  align-self: auto;
+}
+
+.Carousel {
+  width: 100px;
+}
+
+.Carousel img {
+  height: 100px;
+}
+
+.Blurb {
+  width: 60%;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  background: #ccc;
+  font-size: 10px;
+}
