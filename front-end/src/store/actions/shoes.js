@@ -21,7 +21,7 @@ export const selectShoe = shoe => {
 export const searchShoe = shoe => {
   return dispatch => {
     axios
-      .get(`http://localhost:8000/shoes/search/${shoe}`)
+      .get(`http://localhost:5000/shoes/search/${shoe}`)
       .then(res => {
         dispatch(setShoes(res.data))
       })
@@ -34,7 +34,7 @@ export const searchShoe = shoe => {
 export const fetchShoes = () => {
   return dispatch => {
     axios
-      .get("http://localhost:8000/shoes")
+      .get("http://localhost:5000/shoes")
       .then(res => {
         dispatch(setShoes(res.data));
       })

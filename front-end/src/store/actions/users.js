@@ -22,7 +22,7 @@ export const userSignUp = (email, password) => {
     dispatch(userSignUpStart());
     axios({
       method: "post",
-      url: "http://localhost:8000/users",
+      url: "http://localhost:5000/users",
       data: {
         email: email,
         password: password
@@ -64,7 +64,7 @@ export const userUpdateDetails = details => {
     dispatch(userUpdateDetailsStart());
     axios({
       method: "put",
-      url: `http://localhost:8000/users/${id}`,
+      url: `http://localhost:5000/users/${id}`,
       data: {
         id: id,
         firstName: firstName,

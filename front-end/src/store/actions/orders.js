@@ -20,14 +20,14 @@ export const completeOrder = (basket, userId, totalPrice) => {
     dispatch(orderStart());
     axios({
       method: "post",
-      url: "http://localhost:8000/orders",
+      url: "http://localhost:5000/orders",
       data: { userId: userId, basket: basket, clientPrice: totalPrice }
     })
       .then(res => {
         basket.forEach(shoe => {
           axios({
             method: "post",
-            url: `http://localhost:8000/shoes-orders`,
+            url: `http://localhost:5000/shoes-orders`,
             data: { shoeId: shoe.id, orderId: res.data[0].id }
           })
             .then(res => {
@@ -64,7 +64,7 @@ export const fetchOrders = userId => {
     dispatch(fecthOrdersStart());
     axios({
       method: "get",
-      url: `http://localhost:8000/orders/users/${userId}`
+      url: `http://localhost:5000/orders/users/${userId}`
     })
       .then(res => {
         dispatch(fecthOrdersSuccess(res.data));

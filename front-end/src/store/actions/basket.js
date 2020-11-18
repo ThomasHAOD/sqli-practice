@@ -27,7 +27,7 @@ export const addShoeToBasket = shoe => {
     dispatch(addShoeToBasketStart());
     axios({
       method: "put",
-      url: `http://localhost:8000/shoes/${id}/updatebasket`,
+      url: `http://localhost:5000/shoes/${id}/updatebasket`,
       data: {
         id: id,
         newStockLevel: newStockLevel
@@ -72,7 +72,7 @@ export const removeShoeFromBasket = (shoe, index) => {
     dispatch(removeShoeFromBasketStart());
     axios({
       method: "put",
-      url: `http://localhost:8000/shoes/${id}/updatebasket`,
+      url: `http://localhost:5000/shoes/${id}/updatebasket`,
       data: {
         id: id,
         newStockLevel: newStockLevel

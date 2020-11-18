@@ -29,15 +29,16 @@ const getShoeById = (request, response) => {
 
 const getShoesByName = (request, response) => {
     const name = request.params.name;
-    console.log(name);
 
-    pool.query(`SELECT * FROM shoes WHERE name = '${name}' `, (error, results) => {
-        console.log(results);
-        if (error) {
-            throw error;
-        }
-        response.status(200).json(results.rows);
-    });
+    if (name.length > 3) {
+        pool.query(`SELECT * FROM shoes WHERE name = '${name}' `, (error, results) => {
+            console.log(results);
+            if (error) {
+                throw error;
+            }
+            response.status(200).json(results.rows);
+        });
+    }
 }
 
 const updateShoeStockLevel = (request, response) => {
